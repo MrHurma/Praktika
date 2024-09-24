@@ -1,0 +1,216 @@
+@font-face {
+  font-family: ElMessiri;
+  src: url(../fonts/ElMessiri-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: ElMessiri;
+  src: url(../fonts/ElMessiri-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: GolosText;
+  src: url(../fonts/GolosText-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: GolosText;
+  src: url(../fonts/GolosText-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: GolosText;
+  src: url(../fonts/GolosText-SemiBold.ttf);
+  font-weight: 600;
+}
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: #2B2A2C;
+}
+
+.container {
+  max-width: 1208px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__link {
+  color: white;
+  font-family: "GolosText";
+  margin-right: 84px;
+  font-weight: 400;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+.header__link:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+.header__link:last-child {
+  margin-right: 0;
+}
+.header__img {
+  width: 300px;
+  height: 150px;
+  transition: all 0.3s ease;
+}
+.header__img:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.why {
+  padding-bottom: 178px;
+}
+.why__box {
+  display: flex;
+  justify-content: space-between;
+}
+.why__box-outside {
+  padding-top: 66px;
+}
+.why__box-inside {
+  display: flex;
+  align-items: center;
+}
+.why__box-text {
+  display: flex;
+  flex-direction: column;
+}
+.why__img {
+  width: 500px;
+  height: 375px;
+}
+.why__text {
+  font-family: "GolosText";
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+}
+.why__text-outside {
+  max-width: 650px;
+  margin-top: 60px;
+}
+.why__text-inside {
+  max-width: 486px;
+}
+.why__title {
+  color: #F4C609;
+  font-weight: 700;
+  font-size: 36px;
+  font-family: "ElMessiri";
+}
+
+.new {
+  padding-bottom: 95px;
+}
+.new__box {
+  display: flex;
+}
+.new__box-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.new__box-love {
+  display: flex;
+  justify-content: center;
+}
+.new__box-text {
+  display: flex;
+  justify-content: space-between;
+}
+.new__title {
+  font-family: "ElMessiri";
+  font-weight: 700;
+  font-size: 34px;
+}
+.new__subtitle {
+  font-family: "ElMessiri";
+  font-weight: 700;
+  font-size: 30px;
+  max-width: 550px;
+}
+.new__text {
+  font-family: "GolosText";
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.footer {
+  font-family: "GolosText";
+  padding-top: 50px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.footer__wrap {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 33px;
+}
+.footer__block {
+  display: flex;
+  align-items: center;
+}
+.footer__box {
+  display: flex;
+  justify-content: space-around;
+}
+.footer__box-text {
+  color: #949494;
+  font-weight: 400;
+  font-size: 14px;
+}
+.footer__text {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 20px;
+}
+.footer__text-email {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 32px;
+}
+.footer__text-link {
+  display: flex;
+  transition: all 0.3s ease;
+}
+.footer__text-link:hover {
+  transform: scale(0.9);
+}
+.footer__text-phone {
+  margin-right: 25px;
+}
+.footer__text-VK {
+  max-width: 250px;
+}
+.footer__text-img {
+  width: 40px;
+}
+
+.link {
+  color: #F4C609;
+  text-decoration: underline;
+}/*# sourceMappingURL=main.css.map */

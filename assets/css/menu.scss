@@ -1,0 +1,342 @@
+@font-face {
+    font-family: ElMessiri;
+    src: url(../fonts/ElMessiri-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: ElMessiri;
+    src: url(../fonts/ElMessiri-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: GolosText;
+    src: url(../fonts/GolosText-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: GolosText;
+    src: url(../fonts/GolosText-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: GolosText;
+    src: url(../fonts/GolosText-SemiBold.ttf);
+    font-weight: 600;
+}
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    background-color: #2B2A2C;
+    &__title{
+        font-family: 'ElMessiri';
+    }
+    &__box-title{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.container{
+    max-width: 1208px;
+    margin: 0 auto;
+}
+.header{
+    letter-spacing: 0.1em;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link{
+        color: white;
+        font-family: 'GolosText';
+        margin-right: 84px;
+        font-weight: 400;
+        font-size: 22px;
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(.9);
+            cursor: pointer; 
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__img{
+        width: 300px;
+        height: 150px;
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(.9);
+            cursor: pointer; 
+        }
+    }
+}
+.footer{
+    letter-spacing: 0.1em;
+    padding-top: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    &__wrap{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 33px;
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-around;
+        &-text{
+            color: #949494;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 20px;
+        &-email{
+            max-width: 500px;
+            text-align: center;
+            margin: 0 32px;
+        }
+    }
+}
+.burgers{
+    padding-bottom: 40px;
+    font-family: 'GolosText';
+    &__title-main{
+        font-family: 'ElMessiri';
+        font-weight: 700;
+        font-size: 32px;
+        padding-bottom: 18px;
+    }
+    &__wrap{
+        display: flex;
+    }
+    &__box{
+        max-width: 260px;
+        background-color: black;
+        border: 3px #525252 solid;
+        border-radius: 15px;
+        margin-right: 47.6px;
+        margin-bottom: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .3s ease;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            transform: scale(1.2);
+        }
+        &-img{
+            width: 250px;
+            border-radius: 20px;
+        }
+        &-title{
+            margin-top: 18px;
+            margin-bottom: 18px;
+            font-weight: 400;
+            font-size: 32px;
+            &-sovet{
+                font-size: 28px;
+            }
+        }
+        &-text{
+            text-align: center;
+            color: #F2C172;
+            font-weight: 400;
+            font-size: 20px;
+        }
+        &_small{
+            max-width: 190px;
+            margin-right: 58px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            border: 3px #525252 solid;
+            border-radius: 15px;
+            transition: all .3s ease;
+            &:hover{
+                transform: scale(1.2);
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            &-title{
+                font-weight: 400;
+                font-size: 16px;
+                margin-top: 5px;
+                margin-bottom: 16px;
+            }
+            &-text{
+                color: #F2C172;
+                font-weight: 400;
+                font-size: 15px;
+                display: flex;
+                text-align: center;
+            }
+            &-img{
+                width: 182px;
+                border-radius: 15px;
+            }
+        }
+    }
+    &__block{
+        display: flex;
+    }
+}
+.shaurma{
+    padding-bottom: 38px;
+    font-family: 'GolosText';
+    &__title{
+        font-family: 'ElMessiri';
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    &__wrap{
+        display: flex;
+    }
+    &__box{
+        max-width: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        border: 3px #525252 solid;
+        border-radius: 15px;
+        transition: all .3s ease;
+        margin-right: 75px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            transform: scale(1.2);
+        }
+        &-img{
+            width: 230px;
+            border-radius: 20px;
+        }
+        &-title{
+            font-weight: 400;
+            font-size: 22px;
+            margin-bottom: 25px;
+            &-classic{
+                font-size: 21px;
+            }
+        }
+        &-text{
+            display: flex;
+            text-align: center;
+            color: #F2C172;
+        }
+    }
+}
+.hot-dog{
+    padding-bottom: 40px;
+    font-family: 'GolosText';
+    &__title{
+        font-family: 'ElMessiri';
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    &__wrap{
+        display: flex;
+    }
+    &__box{
+        max-width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        border: 3px #525252 solid;
+        border-radius: 15px;
+        transition: all .3s ease;
+        margin-right: 205px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            transform: scale(1.2);
+        }
+        &-img{
+            width: 250px;
+            border-radius: 20px;
+        }
+        &-title{
+            font-weight: 400;
+            font-size: 28px;
+            max-width: 190px;
+            margin-bottom: 13px;
+        }
+        &-text{
+            font-weight: 400;
+            font-size: 20px;
+            display: flex;
+            text-align: center;
+            color: #F2C172;
+        }
+    }
+}
+.sandwich{
+    padding-bottom: 100px;
+    font-family: 'GolosText';
+    &__wrap{
+        display: flex;
+    }
+    &__title{
+        font-family: 'ElMessiri';
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    &__box{
+        max-width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        border: 3px #525252 solid;
+        border-radius: 15px;
+        transition: all .3s ease;
+        margin-right: 207px;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            transform: scale(1.2);
+        }
+        &-img{
+            width: 250px;
+            border-radius: 20px;
+        }
+        &-title{
+            font-weight: 400;
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+        &-text{
+            font-weight: 400;
+            font-size: 20px;
+            display: flex;
+            text-align: center;
+            color: #F2C172;
+        }
+    }
+}
