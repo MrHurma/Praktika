@@ -64,9 +64,19 @@ main{
         width: 300px;
         height: 150px;
         transition: all .3s ease;
+        @media (max-width: 376px){
+            width: 180px;
+            height: 100px;
+        }
         &:hover{
             transform: scale(.9);
             cursor: pointer; 
+        }
+    }
+    &__list{
+        @media (max-width: 376px){
+            display: flex;
+            flex-direction: column;
         }
     }
 }
@@ -75,12 +85,20 @@ main{
     &__box{
         display: flex;
         justify-content: space-between;
+        @media (max-width: 376px) {
+            display: flex;
+            justify-content: space-around;
+        }
         &-outside{
-            padding-top: 50px;
+            padding-top: 66px;
         }
         &-inside{
             display: flex;
             align-items: center;
+            @media (max-width:376px) {
+                display: flex;
+                flex-direction: column;
+            }
         }
         &-text{
             display: flex;
@@ -90,6 +108,24 @@ main{
     &__img{
         width: 500px;
         height: 375px;
+        &-outside{
+            &-adaptive{
+                display: none;
+                @media (max-width: 376px) {
+                    display: flex;
+                    width: 350px;
+                }
+            }
+            @media (max-width: 376px){
+            display: none;
+            }
+        }
+        &-inside{
+            @media (max-width:376px) {
+                width: 350px;
+            }
+        }
+        
     }
     &__text{
         font-family: 'GolosText';
@@ -115,10 +151,17 @@ main{
     padding-bottom: 95px;
     &__box{
         display: flex;
+        @media (max-width: 376px) {
+            display: flex;
+            align-items: center;
+        }
         &-title{
             display: flex;
             flex-direction: column;
             align-items: center;
+            @media (max-width: 376px) {
+                text-align: center;
+            }
         }
         &-love{
             display: flex;
@@ -127,12 +170,16 @@ main{
         &-text{
             display: flex;
             justify-content: space-between;
+            @media (max-width: 376px) {
+                font-size: 15px;
+            }
         }
     }
     &__title{
         font-family: 'ElMessiri';
         font-weight: 700;
         font-size: 34px;
+        text-align: center;
     }
     &__subtitle{
         font-family: 'ElMessiri';
@@ -148,6 +195,9 @@ main{
         margin-bottom: 70px;
         text-align: center;
         max-width: 500px;
+        @media (max-width: 376px) {
+            font-size: 18px;
+        }
     }
 }
 .footer{
@@ -164,6 +214,11 @@ main{
     &__block{
         display: flex;
         align-items: center;
+        @media (max-width: 376px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__box{
         display: flex;
@@ -172,6 +227,9 @@ main{
             color: #949494;
             font-weight: 400;
             font-size: 14px;
+            @media (max-width: 376px){
+                font-size: 12px;
+            }
         }
     }
     &__text{
@@ -179,10 +237,19 @@ main{
         justify-content: space-between;
         font-weight: 400;
         font-size: 20px;
+        @media (max-width: 376px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         &-email{
             max-width: 500px;
             text-align: center;
             margin: 0 32px;
+            @media (max-width: 376px){
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
         }
         &-link{
             display: flex;
@@ -193,12 +260,16 @@ main{
         }
         &-phone{
             margin-right: 25px;
+            @media (max-width: 376px){
+                margin-bottom: 15px;
+            }
         }
         &-VK{
             max-width: 250px;
         }
         &-img{
             width: 40px;
+            
         }
     }
 }
