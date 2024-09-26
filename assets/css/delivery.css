@@ -1,0 +1,88 @@
+@font-face {
+  font-family: ElMessiri;
+  src: url(../fonts/ElMessiri-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: ElMessiri;
+  src: url(../fonts/ElMessiri-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: GolosText;
+  src: url(../fonts/GolosText-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: GolosText;
+  src: url(../fonts/GolosText-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: GolosText;
+  src: url(../fonts/GolosText-SemiBold.ttf);
+  font-weight: 600;
+}
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: #2B2A2C;
+}
+
+.container__form {
+  max-width: 406px;
+  margin: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.form {
+  border: 2px black solid;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.form__label {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: "GolosText";
+  font-size: 14px;
+}
+.form__btn {
+  color: white;
+  background-color: #2C2C2C;
+  margin-bottom: 20px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+.form__input {
+  color: black;
+  margin-bottom: 20px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+.form__title {
+  color: #F4C609;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-family: "ElMessiri";
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0;
+}

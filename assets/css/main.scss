@@ -1,0 +1,279 @@
+@font-face {
+    font-family: ElMessiri;
+    src: url(../fonts/ElMessiri-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: ElMessiri;
+    src: url(../fonts/ElMessiri-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: GolosText;
+    src: url(../fonts/GolosText-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: GolosText;
+    src: url(../fonts/GolosText-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: GolosText;
+    src: url(../fonts/GolosText-SemiBold.ttf);
+    font-weight: 600;
+}
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.1em;
+}
+a{
+    text-decoration: none;
+}
+main{
+    background-color: #2B2A2C;
+}
+.container{
+    max-width: 1208px;
+    margin: 0 auto;
+}
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link{
+        color: white;
+        font-family: 'GolosText';
+        margin-right: 84px;
+        font-weight: 400;
+        font-size: 22px;
+        transition: all .3s ease;
+        &:hover{
+            transform: scale(.9);
+            cursor: pointer; 
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__img{
+        width: 300px;
+        height: 150px;
+        transition: all .3s ease;
+        @media (max-width: 376px){
+            width: 180px;
+            height: 100px;
+        }
+        &:hover{
+            transform: scale(.9);
+            cursor: pointer; 
+        }
+    }
+    &__list{
+        @media (max-width: 376px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+.why{
+    padding-bottom: 178px;
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 376px) {
+            display: flex;
+            justify-content: space-around;
+        }
+        &-outside{
+            padding-top: 66px;
+        }
+        &-inside{
+            display: flex;
+            align-items: center;
+            @media (max-width:376px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &-text{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__img{
+        width: 500px;
+        height: 375px;
+        &-outside{
+            &-adaptive{
+                display: none;
+                @media (max-width: 376px) {
+                    display: flex;
+                    width: 350px;
+                }
+            }
+            @media (max-width: 376px){
+            display: none;
+            }
+        }
+        &-inside{
+            @media (max-width:376px) {
+                width: 350px;
+            }
+        }
+        
+    }
+    &__text{
+        font-family: 'GolosText';
+        color: white;
+        font-size: 22px;
+        font-weight: 400;
+        &-outside{
+            max-width: 650px;
+            margin-top: 60px;
+        }
+        &-inside{
+            max-width: 486px;
+        }
+    }
+    &__title{
+        color: #F4C609;
+        font-weight: 700;
+        font-size: 36px;
+        font-family: 'ElMessiri';
+    }
+}
+.new{
+    padding-bottom: 95px;
+    &__box{
+        display: flex;
+        @media (max-width: 376px) {
+            display: flex;
+            align-items: center;
+        }
+        &-title{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (max-width: 376px) {
+                text-align: center;
+            }
+        }
+        &-love{
+            display: flex;
+            justify-content: center;
+        }
+        &-text{
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 376px) {
+                font-size: 15px;
+            }
+        }
+    }
+    &__title{
+        font-family: 'ElMessiri';
+        font-weight: 700;
+        font-size: 34px;
+        text-align: center;
+    }
+    &__subtitle{
+        font-family: 'ElMessiri';
+        font-weight: 700;
+        font-size: 30px;
+        max-width: 550px;
+    }
+    &__text{
+        font-family: 'GolosText';
+        font-weight: 600;
+        font-size: 24px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        text-align: center;
+        max-width: 500px;
+        @media (max-width: 376px) {
+            font-size: 18px;
+        }
+    }
+}
+.footer{
+    font-family: 'GolosText';
+    padding-top: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    &__wrap{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 33px;
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+        @media (max-width: 376px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__box{
+        display: flex;
+        justify-content: space-around;
+        &-text{
+            color: #949494;
+            font-weight: 400;
+            font-size: 14px;
+            @media (max-width: 376px){
+                font-size: 12px;
+            }
+        }
+    }
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 20px;
+        @media (max-width: 376px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-email{
+            max-width: 500px;
+            text-align: center;
+            margin: 0 32px;
+            @media (max-width: 376px){
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+        }
+        &-link{
+            display: flex;
+            transition: all .3s ease;
+            &:hover{
+                transform: scale(.9);
+            }
+        }
+        &-phone{
+            margin-right: 25px;
+            @media (max-width: 376px){
+                margin-bottom: 15px;
+            }
+        }
+        &-VK{
+            max-width: 250px;
+        }
+        &-img{
+            width: 40px;
+            
+        }
+    }
+}
+.link{
+    color: #F4C609;
+    text-decoration: underline;
+}

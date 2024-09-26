@@ -1,0 +1,103 @@
+@font-face {
+  font-family: ElMessiri;
+  src: url(../fonts/ElMessiri-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: ElMessiri;
+  src: url(../fonts/ElMessiri-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: GolosText;
+  src: url(../fonts/GolosText-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: GolosText;
+  src: url(../fonts/GolosText-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: GolosText;
+  src: url(../fonts/GolosText-SemiBold.ttf);
+  font-weight: 600;
+}
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: #2B2A2C;
+}
+
+.container {
+  max-width: 1208px;
+  margin: 0 auto;
+}
+
+.about {
+  letter-spacing: 10%;
+  padding-top: 48px;
+}
+.about__title {
+  font-size: 32px;
+  color: #F2C172;
+  font-weight: 700;
+  font-family: "ElMessiri";
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.about__title:first-child {
+  margin-top: 0;
+}
+.about__title-box {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 376px) {
+  .about__title {
+    font-size: 20px;
+  }
+}
+.about__text {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+@media (max-width: 376px) {
+  .about__text {
+    font-size: 20px;
+  }
+}
+.about__text-time {
+  max-width: 380px;
+}
+.about__text-places {
+  max-width: 440px;
+}
+.about__text-big {
+  font-weight: 400;
+  font-size: 32px;
+}
+@media (max-width: 376px) {
+  .about__text-big {
+    font-size: 24px;
+  }
+}
+
+.span {
+  color: #F2C172;
+}
+
+.map__link {
+  color: #F2C172;
+  text-decoration: underline;
+}
