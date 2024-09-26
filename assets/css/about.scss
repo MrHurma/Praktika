@@ -43,7 +43,7 @@ main{
     letter-spacing: 10%;
     padding-top: 48px;
     &__title{
-        font-size: 32;
+        font-size: 32px;
         color: #F2C172;
         font-weight: 700;
         font-family: 'ElMessiri';
@@ -56,11 +56,17 @@ main{
             display: flex;
             justify-content: space-around;
         }
+        @media (max-width: 376px) {
+            font-size: 20px;
+        }
     }
     &__text{
         font-weight: 400;
         font-size: 24px;
         margin-bottom: 10px;
+        @media (max-width: 376px) {
+            font-size: 20px;
+        }
         &-time{
             max-width: 380px;
         }
@@ -70,6 +76,9 @@ main{
         &-big{
             font-weight: 400;
             font-size: 32px;
+            @media (max-width: 376px) {
+                font-size: 24px;
+            }
         }
     }
 }
